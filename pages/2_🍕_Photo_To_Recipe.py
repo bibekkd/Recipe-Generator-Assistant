@@ -98,7 +98,6 @@ if submit:
         response = get_gemini_response(input_prompt, image_data)
         st.header("Let's create something delicious together!")
         st.write(response)
-        st.session_state["Chat_history"].append({"user": image_data, "response": response})
         # Add a slider for ratings
         st.write("**Tell How Well Our App is! We are very excited to Know 🙃**")
         rating = st.slider('**Rate our app:**', 1, 5, 1)
